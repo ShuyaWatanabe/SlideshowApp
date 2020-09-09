@@ -14,6 +14,13 @@
 		5AB43B2E2507BA9B00FED04E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AB43B2D2507BA9B00FED04E /* Assets.xcassets */; };
 		5AB43B312507BA9B00FED04E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AB43B2F2507BA9B00FED04E /* LaunchScreen.storyboard */; };
 		5AB43B39250805A600FED04E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB43B38250805A600FED04E /* SecondViewController.swift */; };
+		5AB43B3B2509366500FED04E /* image1 in Resources */ = {isa = PBXBuildFile; fileRef = 5AB43B3A2509366500FED04E /* image1 */; };
+		5AB43B3D2509369500FED04E /* image2 in Resources */ = {isa = PBXBuildFile; fileRef = 5AB43B3C2509369500FED04E /* image2 */; };
+		5AB43B3F250936B200FED04E /* image3 in Resources */ = {isa = PBXBuildFile; fileRef = 5AB43B3E250936B200FED04E /* image3 */; };
+		5AB43B462509386900FED04E /* image5 in Resources */ = {isa = PBXBuildFile; fileRef = 5AB43B422509386900FED04E /* image5 */; };
+		5AB43B472509386900FED04E /* image6 in Resources */ = {isa = PBXBuildFile; fileRef = 5AB43B432509386900FED04E /* image6 */; };
+		5AB43B482509386900FED04E /* image7 in Resources */ = {isa = PBXBuildFile; fileRef = 5AB43B442509386900FED04E /* image7 */; };
+		5AB43B492509386900FED04E /* image4 in Resources */ = {isa = PBXBuildFile; fileRef = 5AB43B452509386900FED04E /* image4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		5AB43B302507BA9B00FED04E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AB43B322507BA9B00FED04E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AB43B38250805A600FED04E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5AB43B3A2509366500FED04E /* image1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = image1; sourceTree = "<group>"; };
+		5AB43B3C2509369500FED04E /* image2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = image2; sourceTree = "<group>"; };
+		5AB43B3E250936B200FED04E /* image3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = image3; sourceTree = "<group>"; };
+		5AB43B422509386900FED04E /* image5 */ = {isa = PBXFileReference; lastKnownFileType = file; path = image5; sourceTree = "<group>"; };
+		5AB43B432509386900FED04E /* image6 */ = {isa = PBXFileReference; lastKnownFileType = file; path = image6; sourceTree = "<group>"; };
+		5AB43B442509386900FED04E /* image7 */ = {isa = PBXFileReference; lastKnownFileType = file; path = image7; sourceTree = "<group>"; };
+		5AB43B452509386900FED04E /* image4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = image4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +58,13 @@
 			children = (
 				5AB43B232507BA9B00FED04E /* SlideshowApp */,
 				5AB43B222507BA9B00FED04E /* Products */,
+				5AB43B3A2509366500FED04E /* image1 */,
+				5AB43B3C2509369500FED04E /* image2 */,
+				5AB43B3E250936B200FED04E /* image3 */,
+				5AB43B452509386900FED04E /* image4 */,
+				5AB43B422509386900FED04E /* image5 */,
+				5AB43B432509386900FED04E /* image6 */,
+				5AB43B442509386900FED04E /* image7 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,9 +149,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB43B462509386900FED04E /* image5 in Resources */,
 				5AB43B312507BA9B00FED04E /* LaunchScreen.storyboard in Resources */,
 				5AB43B2E2507BA9B00FED04E /* Assets.xcassets in Resources */,
+				5AB43B3D2509369500FED04E /* image2 in Resources */,
 				5AB43B2C2507BA9B00FED04E /* Main.storyboard in Resources */,
+				5AB43B3F250936B200FED04E /* image3 in Resources */,
+				5AB43B3B2509366500FED04E /* image1 in Resources */,
+				5AB43B492509386900FED04E /* image4 in Resources */,
+				5AB43B472509386900FED04E /* image6 in Resources */,
+				5AB43B482509386900FED04E /* image7 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

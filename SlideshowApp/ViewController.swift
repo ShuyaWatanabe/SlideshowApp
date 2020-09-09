@@ -20,7 +20,11 @@ class ViewController: UIViewController {
     
     var imageIndex = 0 // imagesのインデックス番号の変更
     
-    let images = [UIImage(named: "Image1"), UIImage(named: "Image2"), UIImage(named: "Image3")]
+    
+    
+    
+    
+    let images = [UIImage(named: "image1"), UIImage(named: "image2"), UIImage(named: "image3"), UIImage(named: "image4"), UIImage(named: "image5"), UIImage(named: "image6"), UIImage(named: "image7"),]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,39 +32,49 @@ class ViewController: UIViewController {
         
         imageView.image = images[0]
         
+        backButtonLabel.layer.cornerRadius = 5.0
+        nextButtonLabel.layer.cornerRadius = 5.0
+        slideshowButtonLabel.layer.cornerRadius = 5.0
+        
+        
     }
     
     @objc func startSlideShow(_ timer:Timer) { // selectorで指定された関数　「次へ」ボタンと同じ仕様
-        if imageIndex == 2 { //　インデックス番号が0,1の場合は+1 2の場合は0に戻す
+        if imageIndex == 6 { //　インデックス番号が0,1の場合は+1 2の場合は0に戻す
                    imageIndex = 0
                } else {
                    imageIndex += 1
                }
                
                imageView.image = images[imageIndex]
+               
+               
     }
 
     @IBOutlet weak var backButtonLabel: UIButton! // 「戻る」ボタンのラベル
     @IBAction func backButton(_ sender: Any) {
         if imageIndex == 0 { // インデックス番号が2,1の場合は-1　0の場合は2に戻す
-            imageIndex = 2
+            imageIndex = 6
         } else {
             imageIndex -= 1
         }
         
         imageView.image = images[imageIndex]
         
+       
+        
     }
     
     @IBOutlet weak var nextButtonLabel: UIButton! //　「次へ」ボタンのラベル
     @IBAction func nextButton(_ sender: Any) {
-        if imageIndex == 2 { //　インデックス番号が0,1の場合は+1 2の場合は0に戻す
+        if imageIndex == 6 { //　インデックス番号が0,1の場合は+1 2の場合は0に戻す
             imageIndex = 0
         } else {
             imageIndex += 1
         }
         
         imageView.image = images[imageIndex]
+        
     }
     
     @IBOutlet weak var slideshowButtonLabel: UIButton! //　「再生/停止」ボタンのラベル
@@ -82,10 +96,19 @@ class ViewController: UIViewController {
             self.nextButtonLabel.isHidden = false
         }
         
+        
+        
+    }
+    
+    @IBAction func tapGesture(_ sender: Any) {
+        performSegue(withIdentifier: "toSecondViewController", sender: nil)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let secondViewController:SecondViewController = segue.destination as! SecondViewController
+       
+        let secondViewController: SecondViewController = segue.destination as! SecondViewController
+            secondViewController.secondImage = images[imageIndex]
         
     }
 }

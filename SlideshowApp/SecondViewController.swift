@@ -11,14 +11,19 @@ import UIKit
 class SecondViewController: UIViewController {
     
 
+    @IBOutlet weak var returnButtonLabel: UIButton!
+    
     @IBOutlet weak var secondImageView: UIImageView!
     
-    var secondImageindex = 0
-    
+   
+    var secondImage: UIImage! //遷移元の画像データを格納
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        secondImageView.image = secondImage
+        returnButtonLabel.layer.cornerRadius = 5.0
         
     }
     
