@@ -110,6 +110,14 @@ class ViewController: UIViewController {
         let secondViewController: SecondViewController = segue.destination as! SecondViewController
             secondViewController.secondImage = images[imageIndex]
         
+        if self.timer != nil {
+            self.timer.invalidate()
+            self.timer = nil
+            self.slideshowButtonLabel.setTitle("再生", for: .normal)
+            self.backButtonLabel.isHidden = false
+            self.nextButtonLabel.isHidden = false
+        }
+        
     }
 }
 
